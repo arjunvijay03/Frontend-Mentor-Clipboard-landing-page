@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Bai Jamjuree;
+    color:  hsl(210, 10%, 33%);
+}
+main{
+    width: 100%;
+}
+body{
+    width: 100%;
+}
+p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+    margin-bottom: 30px;
+    line-height: 1.8rem;
+}
+h1{
+    font-weight: 600;
+    font-size: 2rem;
+    color:  hsl(210, 10%, 33%);
+    margin-bottom: 10px;
+    
+}
+
+h2{
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+h3{
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.first{
+    background: url(./images/bg-header-desktop.png)no-repeat center center/ cover;
+    width: 100%;
+    
+    
+    padding: 20px;
+    
+}
+.first img{
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+.first div{
+    max-width: 600px;
+    padding: 10px;
+    
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+button{
+    padding: 13px 25px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    border: 0;
+
+}
+.buttons button:nth-child(1){
+    background: hsl(171, 66%, 44%);
+}
+.buttons button:nth-child(2){
+    background: hsl(233, 100%, 69%);
+}
+
+.second{
+    margin-top: 100px;
+}
+.text{
+    max-width: 600px;
+    padding: 10px;
+}
+
+.second .computer{
+    display: flex;
+}
+.second .computer img{
+    margin-left: -14%;
+}
+.second .computer .computer-text{
+    text-align: left;
+    margin-left: 6rem;
+    margin-top: 10px;
+    max-width: 400px;
+}
+
+.third{
+    margin-top: 100px;
+    max-width: 100%;
+    padding: 10px;
+}
+.third img{
+    max-width:98% ;
+    margin-top: 20px;
+}
+.forth{
+    padding: 10px;
+}
+.tools{
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+.card{
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card:nth-child(1){
+    margin-top: 15px;
+}
+
+.companies{
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+}
+.companies img{
+    max-width: 150px;
+}
+
+.fifth{
+    margin-top: 100px;
+}
+
+footer{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    background: hsl(0, 0%, 92%);
+    padding: 20px 80px;
+}
+.logo-contacts{
+    
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+.logo-contacts img{
+    width: 50px;
+}
+footer p{
+    margin-bottom: 0;
+    color: #828282;
+    
+}
+footer p:hover{
+    color:hsl(171, 66%, 44%) ;
+}
+.social-medias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.social-medias i{
+    font-size: 1.8rem;
+    transition: .2s;
+}
+.social-medias i:hover{
+    color: hsl(171, 66%, 44%);
+}
+@media (max-width:900px) {
+    .first{
+        background: url(./images/bg-header-mobile.png)no-repeat center center/ cover;
+        
+    }
+    .buttons{
+        flex-direction: column;
+        width: 90%;
+        gap: 20px;
+    }
+    .second .computer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .second .computer img{
+        width: 95%;
+        margin-left: 0;
+    }
+    .second .computer .computer-text{
+        margin-left: 0;
+        text-align: center;
+        margin: 0 30px;
+    }
+    .tools{
+        flex-direction: column;
+
+    }
+    .companies{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+
+    }
+    .logo-contacts{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .logo-contacts div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .social-medias{
+        margin-top: 50px;
+    }
+}
